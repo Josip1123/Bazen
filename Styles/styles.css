@@ -1,18 +1,19 @@
 @import 
 url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
-body {
-    position: relative;
+
+*{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    
+}
 
+body {
+    position: relative;
 }
 
 a{
     text-decoration: none;
-    color: rgb(224, 219, 219);
 }
 
 /* Nav and header */
@@ -32,7 +33,7 @@ a{
 
 }
 
-.main_navigation ul li {
+.main_navigation li {
     padding: 12px 30px;
     margin: 10px;
     background-color: transparent;
@@ -42,9 +43,14 @@ a{
     font-size: 24px;
 }
 
-nav ul li:hover{
+.main_navigation li:hover{
     background-color: rgb(0, 102, 255);
 
+}
+
+.main_navigation a {
+    color: white;
+    color: rgb(224, 219, 219);
 }
 
 .logo {
