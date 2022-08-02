@@ -17,7 +17,7 @@ a{
 
 /* Nav and header */
 
-nav {
+.main_navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,14 +25,14 @@ nav {
     margin: 20px 100px 0 100px;
 }
 
-nav ul {
+.main_navigation ul {
     list-style: none;
     display: flex;
     padding: 15px;
 
 }
 
-nav ul li {
+.main_navigation ul li {
     padding: 12px 30px;
     margin: 10px;
     background-color: transparent;
@@ -48,8 +48,8 @@ nav ul li:hover{
 }
 
 .logo {
-    max-height: 300px;
-    max-width: 300px;
+    max-height: 400px;
+    max-width: 400px;
 }
 
 /* hero section */
@@ -62,7 +62,7 @@ nav ul li:hover{
     background: rgba(0, 0, 0, 0.35);
 }  
 
-.video-bg {
+.video_bg {
     position: absolute;
     top: 50%;
     left: 50%;
