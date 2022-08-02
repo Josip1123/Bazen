@@ -18,12 +18,16 @@ a{
 
 /* Nav and header */
 
+.main_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .main_navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-height: 100px;
-    margin: 20px 100px 0 100px;
 }
 
 .main_navigation ul {
@@ -80,16 +84,24 @@ a{
 
 .scroll_down_icon {
     font-size: 40px;
-    position: absolute;
     top: 87vh;
-    left: 50%;
-    transform: translateX(-50%);
     height: 70px;
     width: 70px;
+    margin: 150px
+}
+
+.main_text {
+    color: white;
+    font-size: 24px ;
+    margin: 50px 0 60px 0;
 }
 
 
 /* Animations */
-.animate__bounceInUp.animate__animated {
-    --animate-duration: 1300ms;
+.animate__animated.animate__fadeIn {
+    --animate-duration: 2500ms;
+}
+
+.random {
+    height: 700px;
 }
