@@ -12,17 +12,17 @@ body {
 
 a{
     text-decoration: none;
-    color: white;
+    color: rgb(224, 219, 219);
 }
 
 /* Nav and header */
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     max-height: 100px;
-    margin-top: 20px;
+    margin: 20px 100px 0 100px;
 }
 
 nav ul {
@@ -36,7 +36,7 @@ nav ul li {
     padding: 12px 30px;
     margin: 10px;
     background-color: transparent;
-    border: 4px solid white;
+    border: 4px solid rgb(224, 219, 219);
     cursor: pointer;
     font-weight: 500;
     font-size: 24px;
@@ -59,7 +59,7 @@ nav ul li:hover{
     height: 100vh;
     position: relative;
     overflow: hidden;
-    background: rgba(0, 0, 0, 0.30);
+    background: rgba(0, 0, 0, 0.35);
 }  
 
 .video-bg {
@@ -74,7 +74,6 @@ nav ul li:hover{
 
 .scroll_down_icon {
     font-size: 40px;
-    color: white;
     position: absolute;
     top: 87vh;
     left: 50%;
