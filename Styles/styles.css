@@ -24,7 +24,7 @@ a{
 
 .hero {
     width: 100%;
-    height: 100vh
+    height: 100vh;
     max-height: 100%;
     position: relative;
     overflow: hidden;
@@ -38,6 +38,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-height: 100%;
 }
 
 .main_navigation {
@@ -87,22 +88,22 @@ a{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -99;
-    min-width: 100%;
+    min-width:100%;
     min-height: 100%;
 }
 
 .scroll_down_icon {
     font-size: 40px;
-    top: 87vh;
     height: 70px;
     width: 70px;
-    margin: 150px
+    margin: 20px;
 }
 
 .main_text {
     color: white;
     font-size: 24px ;
-    margin: 50px 0 60px 0;
+    margin: 20px 0 60px 0;
+    padding: 25px;;
 }
 
 
@@ -115,10 +116,11 @@ a{
 
 /* before and after image slider */
 
-.about_section{
+.img-slider_section{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
+    align-items: center;
     --position: 50%;
 }
 
@@ -140,6 +142,11 @@ a{
 .before{
     position: absolute;
     width: var(--position);
+}
+
+.right-button, .left-button {
+    height: 150px;
+    width: 80px;
 }
 
 .slider{
