@@ -62,10 +62,12 @@ a{
     cursor: pointer;
     font-weight: 500;
     font-size: 24px;
+    border-radius: 50px;
 }
 
 .main_navigation li:hover{
-    background-color: rgb(0, 102, 255);
+    color: black;
+    background-color: rgb(224, 219, 219);
 
 }
 
@@ -97,6 +99,10 @@ a{
     height: 70px;
     width: 70px;
     margin: 20px;
+}
+
+.scroll_down_icon:hover {
+    transform: translateY(5px) !important;
 }
 
 .main_text {
@@ -144,8 +150,28 @@ a{
     width: var(--position);
 }
 
+.left-button {
+    background-image: url(/Styles/img/chevron_left_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.right-button {
+    background-image: url(/Styles/img/chevron_right_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
 .right-button, .left-button {
-    height: 150px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 180px;
+    width: 180px;
+    border: none;
+    background-color: transparent;
+    background-size: 160px;
+}
+
+
+
+.right-button, .left-button {
+    height: 80px;
     width: 80px;
 }
 
@@ -161,7 +187,7 @@ a{
 .slider_line {
     position: absolute;
     inset: 0;
-    width: 0.4rem;
+    width: 0.22rem;
     height: 100%;
     background-color: #fff;
     z-index: 10;
