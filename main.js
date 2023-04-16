@@ -8,8 +8,8 @@ document.querySelector(".slider").addEventListener("input", (e) => {
 
 // before and after picture slider
 
-const beforePictures = ["/Styles/img/before.png", "/Styles/img/before2.png"];
-const afterPictures = ["/Styles/img/after.png", "/Styles/img/after2.png"];
+const beforePictures = ["./Styles/img/before.png", "./Styles/img/before2.png"];
+const afterPictures = ["./Styles/img/after.png", "./Styles/img/after2.png"];
 
 let sliderPictureBefore = document.getElementById("before_image");
 let sliderPictureAfter = document.getElementById("after_image");
