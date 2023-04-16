@@ -152,31 +152,14 @@ a{
     width: var(--position);
 }
 
-.left-button {
-    background-image: url("./Styles/img/chevron_left_FILL0_wght400_GRAD0_opsz48.svg");
-}
-
-.right-button {
-    background-image: url("./Styles/img/chevron_right_FILL0_wght400_GRAD0_opsz48.svg");
-}
 
 .right-button, .left-button {
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    height: 180px;
-    width: 180px;
+    height: 60px;
+    width: 60px;
     border: none;
-    background-color: transparent;
-    background-size: 160px;
     cursor: pointer;
 }
 
-
-
-.right-button, .left-button {
-    height: 80px;
-    width: 80px;
-}
 
 .slider{
     width: 100%;

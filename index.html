@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="T-POOL" content="Održavanje bazena i servis opreme" />
         <title>T-Pool Vodice</title>
         <link
             rel="stylesheet"
@@ -16,16 +16,14 @@
         <div class="hero">
             <div class="main_content">
                 <!-- logo -->
-                <a href="#">
-                    <img
-                        class="logo animate__animated animate__fadeInDown"
-                        src="./Styles/img/Logo - T-pool.png"
-                    />
-                </a>
-                <p class="main_text animate__animated animate__fadeIn">
+                <img
+                    class="logo animate__animated animate__fadeInDown"
+                    src="./Styles/img/Logo - T-pool.png"
+                />
+                <h1 class="main_text animate__animated animate__fadeIn">
                     Usluge čišćenja, održavanja, montaže i servisa bazena <br />
                     te prodaju opreme za bazene.
-                </p>
+                </h1>
                 <!-- Nav buttons -->
                 <nav
                     class="main_navigation animate__animated animate__fadeInDown"
@@ -54,23 +52,27 @@
             </video>
         </div>
 
-        <!-- before after images with slider -->
+        <!-- before & after pictures with slider -->
+
         <div class="img-slider_section" id="first_section">
-            <button
+            <img
                 id="left-slider-btn"
                 class="left-button animate__animated animate__pulse animate__infinite animate__slower"
-            ></button>
+                src="./Styles/img/arrow_circle_left_FILL0_wght400_GRAD0_opsz48.svg"
+                alt=""
+            />
+
             <div class="image_slider_container">
                 <img
                     id="before_image"
                     class="before bef_aft_img"
-                    src=""
+                    src="./Styles/img/before.png"
                     alt="picture of pool before"
                 />
                 <img
                     id="after_image"
                     class="after bef_aft_img"
-                    src=""
+                    src="./Styles/img/after.png"
                     alt="picture of pool after"
                 />
                 <input
@@ -87,10 +89,12 @@
                 />
                 <div class="slider_line"></div>
             </div>
-            <button
+            <img
+                class="right-button animate__animated animate__pulse animate__infinite animate animate__slower"
                 id="right-slider-btn"
-                class="right-button animate__animated animate__heartBeat animate__infinite animate animate__slower"
-            ></button>
+                src="./Styles/img/arrow_circle_right_FILL0_wght400_GRAD0_opsz48.svg"
+                alt=""
+            />
         </div>
         <script src="./main.js"></script>
     </body>
