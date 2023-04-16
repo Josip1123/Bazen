@@ -126,7 +126,7 @@ a{
 .img-slider_section{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
     --position: 50%;
 }
@@ -135,7 +135,7 @@ a{
     display: flex;
     position: relative;
     width: 600px;
-    height: 650px;
+    height: 750px;
     margin: 10px;
 }
 
