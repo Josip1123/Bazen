@@ -81,8 +81,7 @@
                 alt="picture of pool after"
             />
             <input
-                name="diagram selector"
-                class="slider diagram-bar"
+                class="slider"
                 type="range"
                 min="0"
                 max="100"
@@ -104,6 +103,9 @@
     </div>
 </main>
         <script src="./main.js"></script>
+        <script src="https://cdn.rangetouch.com/2.0.1/rangetouch.js">
+            const range = new RangeTouch('input[type="range"]', { ...options });
+        </script>
     </body>
     <!-- <a href="https://www.flaticon.com/free-icons/user-interface" title="user interface icons">User interface icons created by IYAHICON - Flaticon</a> -->
 </html>
