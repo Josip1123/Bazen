@@ -211,7 +211,7 @@ a{
 @media (min-width: 480px) {
 
     body {
-        background-color: red;
+        background-color: green;
     }
     .slider_line {
         width: 2rem;
