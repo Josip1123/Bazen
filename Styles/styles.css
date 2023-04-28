@@ -37,13 +37,13 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-height: 100%;
 }
 
 .hero_navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .hero_navigation ul {
@@ -108,7 +108,7 @@ a{
     color: white;
     font-weight: 700;
     font-size: 30px;
-    margin: 20px 0 60px 0;
+    margin: 20px 0 40px 0;
     padding: 25px;
     text-align: center;
 }
@@ -123,20 +123,24 @@ a{
 
 .content_section {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    height: 100vh;
-    width: 100%;
+    min-height: 100vh;
 }
 
 /* before and after image slider */
 
 .img-slider_section{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    flex-direction: column;
+    /* justify-content: space-around; */
     align-items: center;
     --position: 50%;
+}
+
+.img_switch_buttons {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .image_slider_container{
@@ -208,6 +212,32 @@ a{
     justify-content: center;
     align-items: center;
     width: 300px;
+}
+
+.showcase {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_logo {
+    height: 220px;
+    width: 300px;
+}
+
+.footer_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
 }
 
 
