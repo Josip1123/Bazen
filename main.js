@@ -51,38 +51,58 @@ let customer = 0;
 let years = 0;
 let review = 0;
 
-function customerCounting() {
-    customer = customer + COUNTER_INCREMENT;
-    counterCustomers.innerHTML = `${customer} +`;
+const Counters = document.querySelector(".showcase");
 
-    if (customer >= NUMBER_OF_CUSTOMERS) {
-        clearInterval(customerInterval);
-    }
-}
+const options = {};
 
-const customerInterval = setInterval(
-    customerCounting,
-    timeIncrementForCustomers
-);
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            function customerCounting() {
+                customer = customer + COUNTER_INCREMENT;
+                counterCustomers.innerHTML = `${customer} +`;
 
-function yearsCounting() {
-    years = years + COUNTER_INCREMENT;
-    counterYears.innerHTML = `${years} +`;
+                if (customer >= NUMBER_OF_CUSTOMERS) {
+                    clearInterval(customerInterval);
+                }
+            }
 
-    if (years >= NUMBER_OF_YEARS) {
-        clearInterval(yearsInterval);
-    }
-}
+            const customerInterval = setInterval(
+                customerCounting,
+                timeIncrementForCustomers
+            );
 
-const yearsInterval = setInterval(yearsCounting, timeIncrementForYears);
+            function yearsCounting() {
+                years = years + COUNTER_INCREMENT;
+                counterYears.innerHTML = `${years} +`;
 
-function reviewCounting() {
-    review = review + COUNTER_INCREMENT;
-    counterReview.innerHTML = `${review} %`;
+                if (years >= NUMBER_OF_YEARS) {
+                    clearInterval(yearsInterval);
+                }
+            }
 
-    if (review >= NUMBER_OF_REVIEW) {
-        clearInterval(reviewInterval);
-    }
-}
+            const yearsInterval = setInterval(
+                yearsCounting,
+                timeIncrementForYears
+            );
 
-const reviewInterval = setInterval(reviewCounting, timeIncrementForReview);
+            function reviewCounting() {
+                review = review + COUNTER_INCREMENT;
+                counterReview.innerHTML = `${review} %`;
+
+                if (review >= NUMBER_OF_REVIEW) {
+                    clearInterval(reviewInterval);
+                }
+            }
+
+            const reviewInterval = setInterval(
+                reviewCounting,
+                timeIncrementForReview
+            );
+
+            observer.unobserve(entry.target);
+        }
+    });
+}, options);
+
+observer.observe(Counters);
