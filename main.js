@@ -27,3 +27,22 @@ function changePicture() {
     sliderPictureBefore.src = beforePictures[i % beforePictures.length];
     sliderPictureAfter.src = afterPictures[i % afterPictures.length];
 }
+
+
+// intersection osberver counters section
+
+const counterCustomers = document.querySelector("customers_counter");
+const counterYears = document.querySelector("years_counter");
+const counterReview = document.querySelector("review_counter");
+
+
+const NUMBER_OF_CUSTOMERS = 120;
+const NUMBER_OF_YEARS = 3;
+const NUMBER_OF_REVIEW = 95;
+const COUNTER_TIME = 3000; 
+const COUNTER_INCREMENT = 1;
+
+const timeIncrementForCustomers = COUNTER_INCREMENT/(NUMBER_OF_CUSTOMERS/COUNTER_TIME);
+const timeIncrementForYears = COUNTER_INCREMENT/(NUMBER_OF_YEARS/COUNTER_TIME);
+const timeIncrementForReview = COUNTER_INCREMENT/(NUMBER_OF_REVIEW/COUNTER_TIME);
+
