@@ -28,21 +28,61 @@ function changePicture() {
     sliderPictureAfter.src = afterPictures[i % afterPictures.length];
 }
 
-
 // intersection osberver counters section
 
-const counterCustomers = document.querySelector("customers_counter");
-const counterYears = document.querySelector("years_counter");
-const counterReview = document.querySelector("review_counter");
-
+const counterCustomers = document.getElementById("customers_counter");
+const counterYears = document.getElementById("years_counter");
+const counterReview = document.getElementById("review_counter");
 
 const NUMBER_OF_CUSTOMERS = 120;
-const NUMBER_OF_YEARS = 3;
+const NUMBER_OF_YEARS = 5;
 const NUMBER_OF_REVIEW = 95;
-const COUNTER_TIME = 3000; 
+const COUNTER_TIME = 2000;
 const COUNTER_INCREMENT = 1;
 
-const timeIncrementForCustomers = COUNTER_INCREMENT/(NUMBER_OF_CUSTOMERS/COUNTER_TIME);
-const timeIncrementForYears = COUNTER_INCREMENT/(NUMBER_OF_YEARS/COUNTER_TIME);
-const timeIncrementForReview = COUNTER_INCREMENT/(NUMBER_OF_REVIEW/COUNTER_TIME);
+const timeIncrementForCustomers =
+    COUNTER_INCREMENT / (NUMBER_OF_CUSTOMERS / COUNTER_TIME);
+const timeIncrementForYears =
+    COUNTER_INCREMENT / (NUMBER_OF_YEARS / COUNTER_TIME);
+const timeIncrementForReview =
+    COUNTER_INCREMENT / (NUMBER_OF_REVIEW / COUNTER_TIME);
 
+let customer = 0;
+let years = 0;
+let review = 0;
+
+function customerCounting() {
+    customer = customer + COUNTER_INCREMENT;
+    counterCustomers.innerHTML = `${customer} +`;
+
+    if (customer >= NUMBER_OF_CUSTOMERS) {
+        clearInterval(customerInterval);
+    }
+}
+
+const customerInterval = setInterval(
+    customerCounting,
+    timeIncrementForCustomers
+);
+
+function yearsCounting() {
+    years = years + COUNTER_INCREMENT;
+    counterYears.innerHTML = `${years} +`;
+
+    if (years >= NUMBER_OF_YEARS) {
+        clearInterval(yearsInterval);
+    }
+}
+
+const yearsInterval = setInterval(yearsCounting, timeIncrementForYears);
+
+function reviewCounting() {
+    review = review + COUNTER_INCREMENT;
+    counterReview.innerHTML = `${review} %`;
+
+    if (review >= NUMBER_OF_REVIEW) {
+        clearInterval(reviewInterval);
+    }
+}
+
+const reviewInterval = setInterval(reviewCounting, timeIncrementForReview);
