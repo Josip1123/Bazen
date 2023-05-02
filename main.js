@@ -37,7 +37,7 @@ const counterReview = document.getElementById("review_counter");
 const NUMBER_OF_CUSTOMERS = 120;
 const NUMBER_OF_YEARS = 5;
 const NUMBER_OF_REVIEW = 95;
-const COUNTER_TIME = 2000;
+const COUNTER_TIME = 3000;
 const COUNTER_INCREMENT = 1;
 
 const timeIncrementForCustomers =
@@ -53,7 +53,9 @@ let review = 0;
 
 const Counters = document.querySelector(".showcase");
 
-const options = {};
+const options = {
+    rootMargin: "-50px", 
+};
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
